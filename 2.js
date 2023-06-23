@@ -23,7 +23,7 @@ producer.on('ready', () => {
     try {
       const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
       const city = 'YOUR_CITY_NAME';
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`; ## https://weather.com/es-CL/tiempo/hoy/l/CIXX0020:1:CI?Goto=Redirected
       const response = await axios.get(url);
       const weatherData = response.data;
       const tiempo = weatherData.weather[0].description;
